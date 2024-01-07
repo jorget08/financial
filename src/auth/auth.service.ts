@@ -24,7 +24,7 @@ export class AuthService {
       email: verify.email,
     };
 
-    const user = 'creacion de usuario';
+    return await this.userService.create(create);
   }
 
   async verifyTokenGoogle(token: string) {
